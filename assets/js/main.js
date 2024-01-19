@@ -19,6 +19,7 @@ acordeonTriggers.forEach((trigger) => {
   updateSoftSkills(profileData);
   updateHardSkills(profileData);
   updateLanguages(profileData);
+  updateEducation(profileData);
   updatePortfolio(profileData);
   updateProfessionalExperience(profileData);
 })();
@@ -67,6 +68,13 @@ function updateLanguages(profileData) {
   const languages = document.getElementById("profile.languages");
   languages.innerHTML = profileData.languages
     .map((language) => `<li>${language}</li>`)
+    .join("");
+}
+
+function updateEducation(profileData) {
+  const education = document.getElementById("profile.education");
+  education.innerHTML = profileData.education
+    .map((education) => `<li>${education}</li>`)
     .join("");
 }
 

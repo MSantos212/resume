@@ -37,6 +37,10 @@
     ]
   },
   "languages": ["Português BR", "Inglês (Intermediário)", "Espanhol (Básico)"],
+  "education": [
+    "Ensino Médio - 2018",
+    "Graduação em Ciências da Computação - UNIP (2° Semestre)"
+  ],
   "portfolio": [
     {
       "name": "Clone da HBO Max",
