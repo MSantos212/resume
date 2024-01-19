@@ -1,0 +1,371 @@
+@import url(reset.css);
+
+:root {
+  background-color: #222;
+  color: #eee;
+}
+.main {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+}
+.main::before,
+.main::after {
+  content: "";
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 150vw;
+  height: 100vh;
+  z-index: -1;
+}
+.main::after {
+  content: "";
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../images/points.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.photo {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+.title {
+  text-align: center;
+  font-family: "Neue Machina", sans-serif;
+}
+.information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.information p {
+  display: flex;
+  align-items: center;
+  font-size: 1.02rem;
+}
+
+/* icones */
+.information p::before {
+  content: "";
+  display: inline-flex;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+.information .job::before {
+  background-image: url(../images/job.svg);
+}
+.information .location::before {
+  background-image: url(../images/location.svg);
+}
+.information .phone::before {
+  background-image: url(../images/phone.svg);
+}
+.information .email::before {
+  background-image: url(../images/email.svg);
+}
+.information a {
+  color: #eee;
+  text-decoration: none;
+  cursor: pointer;
+}
+.information a:hover {
+  text-decoration: underline;
+  font-size: 1.25rem;
+  transition: 0.4s;
+}
+
+/* ACORDEON */
+
+.acordeon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: 0.4s;
+}
+.acordeon:hover,
+.open {
+  background-color: #1a60af;
+  border-color: #1a60af;
+}
+
+.content {
+  overflow: hidden;
+  height: 0;
+  transition: 0.6s;
+}
+.trigger {
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #ddd;
+  border: none;
+}
+.trigger:hover {
+  cursor: pointer;
+}
+
+.trigger::after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.6s;
+}
+.open .trigger::after {
+  transform: rotate(180deg);
+}
+.open .content {
+  display: inline-block;
+  padding: 0 1rem 1rem 1rem;
+  height: auto;
+  transition: 0.6s;
+}
+.languages {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.languages li {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.languages li::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  list-style: none;
+  padding: 0 1rem 0rem 1rem;
+  flex-wrap: wrap;
+}
+.portfolio li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.subtitle {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.link {
+  font-size: 1rem;
+}
+.portfolio li a {
+  color: #eee;
+  text-decoration: none;
+}
+.portfolio li a:hover {
+  text-decoration: underline;
+}
+
+.github::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url(../images/git.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.acordeonTitle {
+  font-size: 1.6rem;
+  text-align: start;
+}
+
+/* */
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem;
+}
+.experience li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+.period {
+  display: flex;
+  align-items: center;
+}
+.period::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(../images/data.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.tools,
+.personal {
+  padding: 1rem;
+}
+
+.subtitle-2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.tools ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 1rem;
+}
+.personal ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.personal ul li {
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+
+.tools ul li img {
+  max-width: 4rem;
+  max-height: 4rem;
+  margin: 0.5rem 1rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+footer img {
+  max-width: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    max-width: 1024px;
+    margin: 2rem auto;
+  }
+
+  header {
+    display: grid;
+    grid:
+      "photo title" 1fr
+      "photo information" 1fr / 1fr 1fr;
+  }
+  .photo {
+    grid-area: photo;
+    margin: 0 auto;
+  }
+  .title {
+    grid-area: title;
+    text-align: start;
+    max-width: 10rem;
+    font-size: 2rem;
+  }
+  .information {
+    grid-area: information;
+    gap: 1rem;
+  }
+  .information p {
+    font-size: 1.2rem;
+  }
+
+  .information p::before {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .main::before,
+  .main::after {
+    max-width: 80vw;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

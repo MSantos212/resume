@@ -1,0 +1,74 @@
+{
+  "name": "Marlon Santos",
+  "photo": "https://avatars.githubusercontent.com/u/141075788?v=4",
+  "job": "Estagiário de Eletrônica na Chander Fire",
+  "location": "Ribeirão Preto - SP",
+  "phone": "16991016340",
+  "email": "Marlon.sousa169@gmail.com",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "HTML",
+        "logo": "https://raw.githubusercontent.com/msantos212/resume/main/data/imgs/html.png"
+      },
+      {
+        "name": "CSS",
+        "logo": "https://raw.githubusercontent.com/msantos212/resume/main/data/imgs/css.png"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "https://raw.githubusercontent.com/msantos212/resume/main/data/imgs/js.png"
+      },
+      {
+        "name": "Angular",
+        "logo": "https://raw.githubusercontent.com/msantos212/resume/main/data/imgs/angular.png"
+      },
+      {
+        "name": "Python",
+        "logo": "https://raw.githubusercontent.com/msantos212/resume/main/data/imgs/python.png"
+      }
+    ],
+    "softSkills": [
+      "Aprendizado rápido e contínuo",
+      "Proatividade",
+      "Trabalho em equipe",
+      "Resiliência",
+      "Adaptabilidade"
+    ]
+  },
+  "languages": ["Português BR", "Inglês (Intermediário)", "Espanhol (Básico)"],
+  "portfolio": [
+    {
+      "name": "Clone da HBO Max",
+      "url": "https://msantos212.github.io/hbomax/",
+      "github": true
+    },
+    {
+      "name": "Clone do Discord",
+      "url": "https://msantos212.github.io/clone_discord/",
+      "github": true
+    },
+    {
+      "name": "Pokedex",
+      "url": "https://msantos212.github.io/pokedex/",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "name": "BackOffice / M2 Center",
+      "period": "Nov 2020 - Abr 2022",
+      "description": "Braço direito da supervisão, atuei com cadastros e inputs de vendas nos sistemas da Vivo, tanto móvel quanto fixo. Realizava todo o trabalho da retenção, além de corrigir erros de vendas no CRM interno para garantir que os processos estavam corretos."
+    },
+    {
+      "name": "Analista de Loja / Cabana Burger",
+      "period": "Sep 2022 - Jun 2023",
+      "description": "Atuando como um sub-gerente e braço direito do Gerente de loja, realizava todos os pedidos de compra para a loja, além de receber os produtos e organizar em estoque (de acordo com as políticas internas de segurança, limpeza e PVPS). Gerenciava todo o administrativo da loja, desde documentação legal para funcionamento até planilhas de controle de estoque, acompanhamento de vendas e previsão de vendas/estoque integrada aos pedidos de compra, para maior assertividade."
+    },
+    {
+      "name": "Estagiário de Eletrônica / Chander Fire",
+      "period": "Jul 2023 - Atual",
+      "description": "Realizo produção de eletrônicos de combate à incêndio, desde acionadores e detectores de fumaça até centrais de controle e endereçamento. Montagem das placas de circuito e solda dos componentes, realizando testes com multímetro e manuseio de ferramentes."
+    }
+  ]
+}
