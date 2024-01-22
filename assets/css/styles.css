@@ -95,6 +95,9 @@ header::after {
 .information .email::before {
   background-image: url(../images/email.svg);
 }
+.information .linkedin::before {
+  background-image: url(../images/linkedin.svg);
+}
 .information a {
   color: #eee;
   text-decoration: none;
