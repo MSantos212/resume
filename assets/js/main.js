@@ -47,7 +47,7 @@ function updateProfileInfo(profileData) {
 
   const linkedin = document.getElementById("profile.linkedin");
   linkedin.innerText = profileData.linkedin;
-  linkedin.href = `${profileData.linkedin}`;
+  linkedin.href = `https://www.linkedin.com/in/${profileData.linkedin}`;
 }
 
 function updateSoftSkills(profileData) {
